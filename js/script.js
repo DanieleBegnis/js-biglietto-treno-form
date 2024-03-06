@@ -12,12 +12,14 @@ if (userAge > 65) {
     let priceFix = userDiscount.toFixed(2);
     finalPriceMessage = ('Il costo per anziani è ' + priceFix + ('$'));
     document.querySelector('.user-message').innerHTML = finalPriceMessage
+    alert('Congratulazioni! Sei nel range per avere lo sconto degli anziani!')
 }  else if (userAge < 18) {
     let userDiscount = price * 0.8;
     //arrotondare output ai centesimi
     let priceFix = userDiscount.toFixed(2);
     finalPriceMessage = ('Il costo per minorenni è ' + priceFix + ('$'));
     document.querySelector('.user-message').innerHTML = finalPriceMessage
+    alert('Congratulazioni! Sei nel range per avere lo sconto dei minorenni!')
 } else {
     let userDiscount = price;
     //arrotondare output ai centesimi
