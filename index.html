@@ -7,21 +7,52 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="bg-primary">
     <main>
-        <div class="form-container">
-            <div class="input-container">
-                <label>Età</label>
-                <input id="user-age" type="text">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12">
+                    <h1 class="text-center text-white">CALCOLATORE PREZZO BIGLIETTI TRENO</h1>
+                </div>
             </div>
-            <div class="input-container">
-                <label>Kilometri</label>
-                <input id="user-km" type="text">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card text-center">
+                        <h5 class="card-header">Inserisci la tua età</h5>
+                        <div class="card-body">
+                            <div class="input-container">
+                                <label>Età</label>
+                                <input id="user-age" type="text">
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-6">
+                    <div class="card text-center">
+                        <h5 class="card-header">Inserisci quanti kilometri devi percorrere</h5>
+                        <div class="card-body">
+                            <div class="input-container">
+                                <label>Kilometri</label>
+                                <input id="user-km" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button id="generate-button">Calcola prezzo</button>
-            <button id="clear-button">Pulisci i campi</button>
+            <div class="row py-5">
+                <div class="col-6 text-end">
+                    <button class="btn btn-secondary" id="generate-button">Calcola prezzo</button>    
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-secondary" id="clear-button">Pulisci i campi</button>    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center text-white">
+                    <div class="user-message py-5 fs-1"></div>    
+                </div>
+            </div>
         </div>
-        <div class="user-message"></div>
     </main>
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
